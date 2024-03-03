@@ -1,8 +1,8 @@
 <h1>Desafio 01 - Casa do Código</h1> 
 
 <p align="center">
-    <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=orange&style=for-the-badge"/>
-    
+    <img src="https://img.shields.io/badge/Go-gray?logo=go"/>
+    <img src="https://img.shields.io/badge/Docker-gray?logo=docker" />
 </p>
 
 > Status do Projeto: :heavy_check_mark: (andamento)
