@@ -1,10 +1,10 @@
 <h1>Desafio 01 - Casa do Código</h1> 
 
-<p align="center">
+
     [![Go Reference](https://pkg.go.dev/badge/image)](https://pkg.go.dev/github.com/ncruces/go-strftime)
     [![Go Report](https://goreportcard.com/badge/github.com/ncruces/go-strftime)](https://goreportcard.com/report/github.com/ncruces/go-strftime)
     [![Go Coverage](https://github.com/ncruces/go-strftime/wiki/coverage.svg)](https://raw.githack.com/wiki/ncruces/go-strftime/coverage.html)
-</p>
+
 
 > Status do Projeto: :heavy_check_mark: (andamento)
 
