@@ -1,8 +1,8 @@
 <h1>Desafio 01 - Casa do Código</h1> 
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Go-gray?logo=go"/>
-    <img src="https://img.shields.io/badge/Docker-gray?logo=docker" />
+    <img src="https://img.shields.io/badge/Go-gray?style=for-the-badge&logo=go"/>
+    <img src="https://img.shields.io/badge/Docker-gray?style=for-the-badge&logo=docker" />
 </p>
 
 > Status do Projeto: :heavy_check_mark: (andamento)
