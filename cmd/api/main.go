@@ -1,16 +1,31 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+	"flag"
+	"log"
 )
 
+type config struct {
+	port int
+	env  string
+}
+
+type application struct {
+	config config
+}
+
 func main() {
-	mux := http.NewServeMux()
+	var cfg config
 
-	mux.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hello World!!")
-	})
+	flag.IntVar(&cfg.port, "port", 8080, "API server port")
+	flag.StringVar(&cfg.env, "env", "development", "Environment (development|staging|production)")
 
-	http.ListenAndServe(":8080", mux)
+	app := &application{
+		config: cfg,
+	}
+
+	err := app.serve()
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
