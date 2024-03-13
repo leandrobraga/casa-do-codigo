@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/cdc
     environment:
-      - ENV_VAR=value
+      - GOFLAGS="-buildvcs=false"
