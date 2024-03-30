@@ -1,10 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"cdc/internal/data"
+	"encoding/json"
 	"net/http"
 )
 
 func (app *application) createAuthor(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Craindo Autor")
+	var input data.AuthorDtoInput
+	json.NewDecoder(r.Body).Decode(&input)
+
+	w.Header().Set("Content-Type", "applciation/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Criando Autor!\n"))
 }
