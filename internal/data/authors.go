@@ -25,12 +25,14 @@ type Author struct {
 	CreateAt    time.Time `json:"created_at"`
 }
 
-// func NewAuthor(i AuthorDtoInput) *Author {
-// 	return &Author{
-// 		Name: i.Name,
-
-// 	}
-// }
+func NewAuthor(i AuthorDtoInput) *Author {
+	return &Author{
+		Name:        i.Name,
+		Email:       i.Email,
+		Description: i.Description,
+		CreateAt:    time.Now(),
+	}
+}
 
 func (a Author) Validate() error {
 	val := v.Is(
