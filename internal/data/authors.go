@@ -1,6 +1,7 @@
 package data
 
 import (
+	"database/sql"
 	"regexp"
 	"time"
 
@@ -47,4 +48,8 @@ func (a Author) Validate() error {
 		return val.Error()
 	}
 	return nil
+}
+
+type AuthorModel struct {
+	DB *sql.DB
 }
